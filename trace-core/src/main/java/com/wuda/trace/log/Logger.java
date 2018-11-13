@@ -30,7 +30,7 @@ public class Logger {
      */
     public Logger(String applicationName, Class<?> clazz) {
         this.applicationName = applicationName;
-        this.logger = LoggerFactory.getLogger(getClass());
+        this.logger = LoggerFactory.getLogger(clazz);
     }
 
     private String rewriteFormat(String format) {
